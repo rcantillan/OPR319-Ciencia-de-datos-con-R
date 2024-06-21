@@ -1,4 +1,3 @@
-# OPR319-UCM
 
 ![...](img/cdar.jpg)
 
