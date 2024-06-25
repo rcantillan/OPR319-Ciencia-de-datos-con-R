@@ -19,7 +19,7 @@ El programa abarca cada etapa del proceso de manipulación y análisis de datos,
 
 Al finalizar el curso, los estudiantes serán capaces de analizar bases de datos de complejidad intermedia a avanzada, aplicando un enfoque sistemático y riguroso en cada fase del proceso analítico.
 
-## Bibliografía fundamental
+### Bibliografía fundamental
 
 El curso se basa principalmente en los siguientes libros:
 
