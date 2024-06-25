@@ -26,7 +26,7 @@ El curso se basa principalmente en los siguientes libros:
 1. Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). *R for data science*. O'Reilly Media, Inc. 
    [Versión en inglés disponible en línea](https://r4ds.hadley.nz/)
 
-2. Llaudet, E., & Imai, K. *Data Analysis for Social Science: A Friendly and Practical Introduction*.
+2. Llaudet, E., & Imai, K. *Data Analysis for Social Science: A Friendly and Practical Introduction*. Princeton University Press.
 
 Estos textos proporcionan tanto los fundamentos teóricos como las aplicaciones prácticas de la Ciencia de Datos, con un enfoque particular en el uso de R y Tidyverse para el análisis de datos en ciencias sociales.
 
