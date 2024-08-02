@@ -118,17 +118,17 @@ Estas habilidades no solo mejorarán la capacidad de los estudiantes para realiz
 -   Escritura de datos en diferentes formatos
 -   Conexión con bases de datos
 
-## `r advdate(inicio_semestre, 5)`: Introducción a Tidyverse
+## `r advdate(inicio_semestre, 5)`: Introducción a `Tidyverse`
 
--   Filosofía de Tidyverse
+-   Filosofía de `Tidyverse`
 -   Pipes (%\>%) y su uso
--   Introducción a dplyr: select(), filter(), mutate()
+-   Introducción a `dplyr`: `select()`, `filter()`, `mutate()`
 
-## `r advdate(inicio_semestre, 6)`: Manipulación de Datos con dplyr I
+## `r advdate(inicio_semestre, 6)`: Manipulación de Datos con `dplyr` I
 
--   Agrupación y resumen de datos: group_by() y summarize()
--   Ordenamiento de datos: arrange()
--   Creación de nuevas variables (avanzado): mutate(), case_when() 
+-   Agrupación y resumen de datos: `group_by()` y `summarize()`
+-   Ordenamiento de datos: `arrange()`
+-   Creación de nuevas variables (avanzado): `mutate()`, `case_when()`
 
 ## `r advdate(inicio_semestre, 7)`: Feriado Fiestas Patrias
 
@@ -138,25 +138,25 @@ Estas habilidades no solo mejorarán la capacidad de los estudiantes para realiz
 -   Operaciones de conjunto: union(), intersect(), setdiff()
 -   Manejo de datos faltantes
 
-## `r advdate(inicio_semestre, 9)`: Transformación de Datos con tidyr
+## `r advdate(inicio_semestre, 9)`: Transformación de Datos con `tidyr`
 
 -   Datos tidy y su importancia
--   Funciones pivot_longer() y pivot_wider()
--   Separación y unión de columnas: separate() y unite()
+-   Funciones `pivot_longer()` y `pivot_wider()`
+-   Separación y unión de columnas: `separate()` y `unite()`
 
-## `r advdate(inicio_semestre, 10)`: Iteración y Automatización con purrr
+## `r advdate(inicio_semestre, 10)`: Iteración y Automatización con `purrr`
 
 -   Conceptos de programación funcional
--   Familia de funciones map()
--   Uso de purrr con dplyr
+-   Familia de funciones `map()`
+-   Uso de `purrr` con `dplyr`
 
-## `r advdate(inicio_semestre, 11)`: Visualización de Datos I: Fundamentos de ggplot2
+## `r advdate(inicio_semestre, 11)`: Visualización de Datos I: Fundamentos de `ggplot2`
 
 -   Gramática de gráficos
--   Capas en ggplot2
+-   Capas en `ggplot2`
 -   Tipos básicos de gráficos: dispersión, líneas, barras
 
-## `r advdate(inicio_semestre, 12)`: Visualización de Datos II: ggplot2 Avanzado
+## `r advdate(inicio_semestre, 12)`: Visualización de Datos II: `ggplot2` Avanzado
 
 -   Faceting
 -   Temas y personalización de gráficos
@@ -166,25 +166,25 @@ Estas habilidades no solo mejorarán la capacidad de los estudiantes para realiz
 
 ## `r advdate(inicio_semestre, 14)`: Introducción al Modelado Estadístico
 
--   Regresión lineal con lm()
+-   Regresión lineal con `lm()`
 -   Interpretación de resultados
 -   Diagnósticos básicos de modelos
 
-## `r advdate(inicio_semestre, 15)`: Modelos Avanzados con tidymodels
+## `r advdate(inicio_semestre, 15)`: Modelos Avanzados con `tidymodels`
 
--   Introducción a tidymodels
+-   Introducción a `tidymodels`
 -   Preprocesamiento de datos
 -   Entrenamiento y evaluación de modelos
 
-## `r advdate(inicio_semestre, 16)`: Reportes Automatizados I: Introducción a R Markdown
+## `r advdate(inicio_semestre, 16)`: Reportes Automatizados I: Introducción a `RMarkdown`
 
--   Sintaxis básica de Markdown
--   Chunks de R en R Markdown
+-   Sintaxis básica de `Markdown`
+-   Chunks de `R` en `RMarkdown`
 -   Generación de reportes en diferentes formatos (PDF, HTML)
 
-## `r advdate(inicio_semestre, 17)`: Reportes Automatizados II: R Markdown Avanzado
+## `r advdate(inicio_semestre, 17)`: Reportes Automatizados II: `Quarto`
 
--   Parámetros en R Markdown
+-   Parámetros en `Quarto`
 -   Creación de presentaciones con `Quarto`
 -   Introducción a `Quarto`
 
