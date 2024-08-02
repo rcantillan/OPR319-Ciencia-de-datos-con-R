@@ -134,8 +134,8 @@ Estas habilidades no solo mejorarán la capacidad de los estudiantes para realiz
 
 ## `r advdate(inicio_semestre, 8)`: Manipulación de Datos con `dplyr` II
 
--   Joins: inner_join(), left_join(), etc.
--   Operaciones de conjunto: union(), intersect(), setdiff()
+-   Joins: `inner_join()`, `left_join()`, etc.
+-   Operaciones de conjunto: `union()`, `intersect()`, `setdiff()`
 -   Manejo de datos faltantes
 
 ## `r advdate(inicio_semestre, 9)`: Transformación de Datos con `tidyr`
