@@ -16,7 +16,7 @@ title: "OPR319: Ciencia de Datos Aplicada con RStudio"
 author: 
   - name: "Roberto Cantillan"
     email: "ricantillan@uc.cl"
-  - name: "Pablo Jimenez"
+  - name: "Pablo Jiménez"
     email: "pjimenez@ucm.cl"
 date: "Segundo Semestre, 2024"
 
@@ -100,6 +100,8 @@ Estas habilidades no solo mejorarán la capacidad de los estudiantes para realiz
 -   Interfaz de RStudio
 -   Conceptos básicos de R: objetos, funciones, paquetes
 -   Tipos de datos en R: numéricos, caracteres, lógicos, factores
+-   Operaciones aritméticas y lógicas
+-   Vectores y matrices
 
 ## `r advdate(inicio_semestre, 2)`: Jueves 15 feriado
 
@@ -160,36 +162,38 @@ Estas habilidades no solo mejorarán la capacidad de los estudiantes para realiz
 -   Temas y personalización de gráficos
 -   Combinación de múltiples gráficos
 
-## `r advdate(inicio_semestre, 13)`: Introducción al Modelado Estadístico
+## `r advdate(inicio_semestre, 13)`: Feriado 
+
+## `r advdate(inicio_semestre, 14)`: Introducción al Modelado Estadístico
 
 -   Regresión lineal con lm()
 -   Interpretación de resultados
 -   Diagnósticos básicos de modelos
 
-## `r advdate(inicio_semestre, 14)`: Modelos Avanzados con tidymodels
+## `r advdate(inicio_semestre, 15)`: Modelos Avanzados con tidymodels
 
 -   Introducción a tidymodels
 -   Preprocesamiento de datos
 -   Entrenamiento y evaluación de modelos
 
-## `r advdate(inicio_semestre, 15)`: Reportes Automatizados I: Introducción a R Markdown
+## `r advdate(inicio_semestre, 16)`: Reportes Automatizados I: Introducción a R Markdown
 
 -   Sintaxis básica de Markdown
 -   Chunks de R en R Markdown
 -   Generación de reportes en diferentes formatos (PDF, HTML)
 
-## `r advdate(inicio_semestre, 16)`: Reportes Automatizados II: R Markdown Avanzado
+## `r advdate(inicio_semestre, 17)`: Reportes Automatizados II: R Markdown Avanzado
 
 -   Parámetros en R Markdown
 -   Creación de presentaciones con R Markdown
 -   Introducción a Quarto
 
-## `r advdate(inicio_semestre, 17)`: Proyecto Final - Trabajo en Clase
+## `r advdate(inicio_semestre, 18)`: Proyecto Final - Trabajo en Clase
 
 -   Sesión de trabajo guiado para el proyecto final
 -   Consultas y asesorías individuales
 
-## `r advdate(inicio_semestre, 18)`: Proyecto Final - Presentaciones
+## `r advdate(inicio_semestre, 19)`: Proyecto Final - Presentaciones
 
 -   Presentación de proyectos finales por parte de los estudiantes
 -   Retroalimentación y discusión
