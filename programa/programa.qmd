@@ -211,11 +211,11 @@ Estas habilidades no solo mejorarán la capacidad de los estudiantes para realiz
 
 1.  Tarea de programación I (35%)
     -   Instrumento: Rúbrica e Informe (Escala de apreciación)
-    -   Contenidos: Importación y exportación, agrupación y resumen de datos y manipulación de datos de datos con dplyr,  Manipulación de datos II (unión), manejo de datos faltantes. 
+    -   Contenidos: Importación y exportación, agrupación y resumen de datos y manipulación de datos de datos con `dplyr`,  manipulación de datos II (unión), transformación de datos (`tidyr`), manejo de datos faltantes. 
     
 2.  Tarea de programación II (35%)
     -   Instrumento: Rúbrica y Diagrama de flujo (Pauta de cotejo)
-    -   Contenidos: Transformación de datos (tidyr), iteración y automatización (purrr), creación de gráficas (ggplot). 
+    -   Contenidos: Iteración y automatización (`purrr`), creación de gráficas (`ggplot`). 
     
 3.  Tarea de programación III (30%)
     -   Instrumento: Rúbrica y Autoevaluación de proceso (Pauta de cotejo)
