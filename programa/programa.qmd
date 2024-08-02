@@ -132,7 +132,7 @@ Estas habilidades no solo mejorarán la capacidad de los estudiantes para realiz
 
 ## `r advdate(inicio_semestre, 7)`: Feriado Fiestas Patrias
 
-## `r advdate(inicio_semestre, 8)`: Manipulación de Datos con dplyr II
+## `r advdate(inicio_semestre, 8)`: Manipulación de Datos con `dplyr` II
 
 -   Joins: inner_join(), left_join(), etc.
 -   Operaciones de conjunto: union(), intersect(), setdiff()
