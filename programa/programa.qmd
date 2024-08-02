@@ -12,7 +12,7 @@ format:
     fig-caption: true
     template: svm-latex-syllabus.tex
 
-title: "OPR319: Ciencia de Datos Aplicada con RStudio"
+title: "OPR319: Introducción a la Ciencia de Datos Aplicada con RStudio"
 author: 
   - name: "Roberto Cantillan"
     email: "ricantillan@uc.cl"
@@ -128,7 +128,7 @@ Estas habilidades no solo mejorarán la capacidad de los estudiantes para realiz
 
 -   Agrupación y resumen de datos: group_by() y summarize()
 -   Ordenamiento de datos: arrange()
--   Creación de nuevas variables: mutate() avanzado
+-   Creación de nuevas variables (avanzado): mutate(), case_when() 
 
 ## `r advdate(inicio_semestre, 7)`: Feriado Fiestas Patrias
 
@@ -185,8 +185,8 @@ Estas habilidades no solo mejorarán la capacidad de los estudiantes para realiz
 ## `r advdate(inicio_semestre, 17)`: Reportes Automatizados II: R Markdown Avanzado
 
 -   Parámetros en R Markdown
--   Creación de presentaciones con R Markdown
--   Introducción a Quarto
+-   Creación de presentaciones con `Quarto`
+-   Introducción a `Quarto`
 
 ## `r advdate(inicio_semestre, 18)`: Proyecto Final - Trabajo en Clase
 
@@ -216,10 +216,15 @@ Estas habilidades no solo mejorarán la capacidad de los estudiantes para realiz
 
 1.  Tarea de programación I (35%)
     -   Instrumento: Rúbrica e Informe (Escala de apreciación)
+    -   Contenidos: Importación y exportación, agrupación y resumen de datos y manipulación de datos de datos con dplyr,  Manipulación de datos II (unión), manejo de datos faltantes. 
+    
 2.  Tarea de programación II (35%)
     -   Instrumento: Rúbrica y Diagrama de flujo (Pauta de cotejo)
+    -   Contenidos: Transformación de datos (tidyr), iteración y automatización (purrr), creación de gráficas (ggplot). 
+    
 3.  Tarea de programación III (30%)
     -   Instrumento: Rúbrica y Autoevaluación de proceso (Pauta de cotejo)
+    -   Contenidos: Modelado estadístico con `tidymodels` (procesamiento y uso de resultados), reportes con `Quarto`
 
 # Recursos de Infraestructura
 
