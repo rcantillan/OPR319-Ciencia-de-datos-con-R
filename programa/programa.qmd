@@ -198,11 +198,6 @@ Estas habilidades no solo mejorarán la capacidad de los estudiantes para realiz
 -   Presentación de proyectos finales por parte de los estudiantes
 -   Retroalimentación y discusión
 
-## `r advdate(inicio_semestre, 19)`: Revisión y Cierre del Curso
-
--   Repaso de los conceptos clave del curso
--   Discusión sobre aplicaciones futuras y recursos adicionales
--   Evaluación del curso y retroalimentación de los estudiantes
 
 # Estrategias de Enseñanza y Aprendizaje
 
@@ -224,7 +219,8 @@ Estas habilidades no solo mejorarán la capacidad de los estudiantes para realiz
     
 3.  Tarea de programación III (30%)
     -   Instrumento: Rúbrica y Autoevaluación de proceso (Pauta de cotejo)
-    -   Contenidos: Modelado estadístico con `tidymodels` (procesamiento y uso de resultados), reportes con `Quarto`
+    -   Contenidos: Modelado estadístico con `tidymodels` (procesamiento y uso de resultados), reportes con `Quarto`.
+    
 
 # Recursos de Infraestructura
 
