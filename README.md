@@ -17,6 +17,8 @@ El programa abarca cada etapa del proceso de manipulación y análisis de datos,
 5. Modelado
 6. Creación de informes automáticos y reproducibles
 
+Acá pueden visualizar el [programa del curso](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/rcantillan/OPR319-Ciencia-de-datos-con-R/main/programa/programa.pdf) 
+
 Al finalizar el curso, los estudiantes serán capaces de analizar bases de datos de complejidad intermedia a avanzada, aplicando un enfoque sistemático y riguroso en cada fase del proceso analítico.
 
 ### Bibliografía fundamental
