@@ -232,13 +232,13 @@ Estas habilidades no solo mejorarán la capacidad de los estudiantes para realiz
 
 ## Básica Obligatoria
 
--   Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for data science. O'Reilly Media, Inc. Versión en español: R para ciencia de datos: https://es.r4ds.hadley.nz/
--   Ismay, C., & Kim, A. Y.-S. (2020). Statistical inference via data science: A ModernDive into R and the Tidyverse. CRC Press / Taylor & Francis Group. (versión gitbook de libre acceso: https://moderndive.com/)
+-   Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for data science. O'Reilly Media, Inc. Versión en español: R para ciencia de datos: [https://es.r4ds.hadley.nz/](https://es.r4ds.hadley.nz/)
+-   Ismay, C., & Kim, A. Y.-S. (2020). Statistical inference via data science: A ModernDive into R and the Tidyverse. CRC Press / Taylor & Francis Group. (versión gitbook de libre acceso: [https://moderndive.com/](https://moderndive.com/))
 
 ## Complementaria
 
 -   Imai, K., & Williams, N. W. (2022). Quantitative Social Science: An Introduction in Tidyverse. Princeton University Press.
--   Wickham, H. (2019). Advanced r. CRC press. (link a versión on line de libre acceso https://adv-r.hadley.nz/)
+-   Wickham, H. (2019). Advanced r. CRC press. (link a versión on line de libre acceso [https://adv-r.hadley.nz/](https://adv-r.hadley.nz/))
 
 # Otros Recursos
 
