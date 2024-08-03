@@ -23,7 +23,8 @@ date: "Segundo Semestre, 2024"
 officehours: "[Horario de oficina]"
 office: "[Número de oficina]"
 classroom: "[Sala de clases]"
-classhours: "[Horario de clases]"
+classhours: "[Horario de clases]" 
+email: "ricantillan@uc.cl / pjimenez@ucm.cl"
 web: "https://github.com/rcantillan/OPR319-Ciencia-de-datos-con-R"
 ---
 
