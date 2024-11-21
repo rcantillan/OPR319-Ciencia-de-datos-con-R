@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" page-range-format="expanded">
+  <info>
+    <title>American Psychological Association 7th edition</title>
+    <title-short>APA</title-short>
+    <id>http://www.zotero.org/styles/apa</id>
+    <link href="http://www.zotero.org/styles/apa" rel="self"/>
+    <link href="http://www.zotero.org/styles/apa-6th-edition" rel="template"/>
+    <link href="https://apastyle.apa.org" rel="documentation"/>
+    <author>
+      <name>Brenton M. Wiernik</name>
+      <email>zotero@wiernik.org</email>
+    </author>
+    <category citation-format="author-date"/>
+    <category field="psychology"/>
+    <category field="generic-base"/>
+    <updated>2023-07-03T01:36:48+00:00</updated>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+  </info>
+  <!-- Definiciones de macros omitidas por brevedad -->
+  <macro name="container-contributors">
+    <choose>
+      <if type="chapter paper-conference entry-dictionary entry-encyclopedia" match="any">
+        <group delimiter=", " suffix=", ">
+          <names variable="container-author" delimiter=", ">
+            <name and="symbol" initialize-with=". " delimiter=", "/>
+            <label form="short" prefix=" (" text-case="title" suffix=")"/>
+          </names>
+          <names variable="editor translator" delimiter=", ">
+            <name and="symbol" initialize-with=". " delimiter=", "/>
+            <label form="short" prefix=" (" text-case="title" suffix=")"/>
+          </names>
+        </group>
+      </if>
+    </choose>
+  </macro>
+  <!-- Más macros y reglas de formato omitidas por brevedad -->
+  <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="true" disambiguate-add-givenname="true" collapse="year" givenname-disambiguation-rule="primary-name">
+    <sort>
+      <key macro="author"/>
+      <key macro="issued-sort"/>
+    </sort>
+    <layout prefix="(" suffix=")" delimiter="; ">
+      <group delimiter=", ">
+        <text macro="author-short"/>
+        <text macro="issued-citation"/>
+        <text macro="citation-locator"/>
+      </group>
+    </layout>
+  </citation>
+  <bibliography hanging-indent="true" et-al-min="8" et-al-use-first="6" et-al-use-last="true" entry-spacing="0" line-spacing="2">
+    <sort>
+      <key macro="author"/>
+      <key macro="issued-sort" sort="ascending"/>
+      <key macro="title"/>
+    </sort>
+    <layout>
+      <group suffix=".">
+        <group delimiter=". ">
+          <text macro="author"/>
+          <text macro="issued"/>
+          <text macro="title-plus-extra"/>
+          <text macro="container"/>
+        </group>
+        <text macro="legal-cites"/>
+        <text macro="locators"/>
+        <group delimiter=", " prefix=". ">
+          <text macro="event"/>
+          <text macro="publisher"/>
+        </group>
+      </group>
+      <text macro="access" prefix=" "/>
+      <text macro="original-date" prefix=" "/>
+    </layout>
+  </bibliography>
+</style>

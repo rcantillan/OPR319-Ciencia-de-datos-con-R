@@ -1,0 +1,411 @@
+---
+title: "Manual de RMarkdown"
+subtitle: "De Básico a Avanzado"
+author: "Roberto Cantillan"
+date: "`r Sys.Date()`"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-float: true
+    code-fold: show
+    code-tools: true
+    code-copy: true
+    html-math-method: katex
+    df-print: paged
+    fig-width: 8
+    fig-height: 6
+    fig-dpi: 300
+title-block-banner: "rgba(2, 123, 16, 0.8)"
+title-block-banner-color: "rgba(0, 0, 0, 1)"
+title-block-style: default
+theme: cosmo
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  fig.width = 8,
+  fig.height = 6,
+  out.width = "100%",
+  fig.retina = 2,
+  fig.align = 'center',
+  cache = FALSE
+)
+
+# Cargar librerías necesarias
+library(tidyverse)
+library(gapminder)
+library(knitr)
+library(kableExtra)
+library(DT)
+library(plotly)
+library(scales)
+library(gt)
+```
+
+# Introducción {.unnumbered}
+
+Este manual está diseñado para estudiantes de sociología que desean aprender RMarkdown desde cero hasta un nivel avanzado. El contenido está organizado de manera progresiva, comenzando con conceptos básicos y avanzando hacia funcionalidades más complejas.
+
+# PARTE I: FUNDAMENTOS DE RMARKDOWN
+
+## ¿Qué es RMarkdown?
+
+RMarkdown es una herramienta que nos permite:
+- Combinar código R con texto narrativo
+- Crear documentos reproducibles
+- Generar reportes en múltiples formatos (HTML, PDF, Word)
+
+## Estructura Básica de un Documento RMarkdown
+
+Todo documento RMarkdown tiene tres componentes principales:
+
+1. YAML Header (metadatos y configuración)
+2. Texto en formato Markdown
+3. Chunks de código R
+
+### El YAML Header
+
+Así se escribe un YAML header básico:
+
+```yaml
+---
+title: "Mi Primer Documento"
+author: "Tu Nombre"
+date: "2024-03-20"
+output: html_document
+---
+```
+
+Y uno más avanzado:
+
+```yaml
+---
+title: "Análisis Social Avanzado"
+subtitle: "Un estudio con R"
+author: "Tu Nombre"
+date: "`r Sys.Date()`"
+format:
+  html:
+    toc: true
+    toc-float: true
+    code-fold: show
+    theme: cosmo
+    highlight: tango
+    css: custom.css
+bibliography: references.bib
+csl: apa.csl
+---
+```
+
+# PARTE II: SINTAXIS MARKDOWN BÁSICA
+
+## Texto y Formato Básico
+
+### Cómo Escribir los Diferentes Formatos
+
+```markdown
+Texto normal sin formato especial.
+
+*Este texto estará en cursiva*
+**Este texto estará en negrita**
+***Este texto estará en negrita y cursiva***
+`Esto es código en línea`
+~~Esto es texto tachado~~
+```
+
+Se verá así:
+
+- Texto normal sin formato especial.
+- *Este texto estará en cursiva*
+- **Este texto estará en negrita**
+- ***Este texto estará en negrita y cursiva***
+- `Esto es código en línea`
+- ~~Esto es texto tachado~~
+
+## Encabezados
+
+### Código para Encabezados
+
+```markdown
+# Encabezado 1
+## Encabezado 2
+### Encabezado 3
+#### Encabezado 4
+##### Encabezado 5
+###### Encabezado 6
+```
+
+## Listas
+
+### Listas No Ordenadas
+
+```markdown
+- Primer ítem
+  - Sub-ítem
+    - Sub-sub-ítem
+- Segundo ítem
+  - Otro sub-ítem
+```
+
+### Listas Ordenadas
+
+```markdown
+1. Primer paso
+2. Segundo paso
+   1. Sub-paso A
+   2. Sub-paso B
+3. Tercer paso
+```
+
+## Enlaces e Imágenes
+
+### Enlaces
+
+```markdown
+[Texto del enlace](URL)
+[RStudio](https://www.rstudio.com)
+```
+
+### Imágenes
+
+```markdown
+![Texto alternativo](ruta/a/imagen.jpg)
+![Logo de R](https://www.r-project.org/logo/Rlogo.png)
+```
+
+## Tablas Básicas en Markdown
+
+```markdown
+| Variable | Tipo | Descripción |
+|----------|------|-------------|
+| edad | Numérica | Edad del encuestado |
+| educacion | Categórica | Nivel educativo |
+| ingreso | Numérica | Ingreso mensual |
+```
+
+# PARTE III: CHUNKS DE CÓDIGO R
+
+## Anatomía de un Chunk
+
+### Estructura Básica
+````markdown
+```{r nombre-del-chunk, opciones}
+# Código R aquí
+```
+````
+
+### Opciones Principales de Chunk
+
+```markdown
+- echo: TRUE/FALSE (mostrar/ocultar código)
+- eval: TRUE/FALSE (ejecutar/no ejecutar)
+- include: TRUE/FALSE (incluir/excluir output)
+- message: TRUE/FALSE (mostrar/ocultar mensajes)
+- warning: TRUE/FALSE (mostrar/ocultar advertencias)
+- fig.width, fig.height: dimensiones de gráficos
+- fig.cap: leyenda de figura
+- cache: TRUE/FALSE (almacenar resultados)
+```
+
+## Ejemplos de Chunks
+
+### Chunk Básico
+```{r chunk-basico}
+# Crear un vector
+numeros <- 1:10
+mean(numeros)
+```
+
+### Chunk con Opciones de Gráfico
+```{r chunk-grafico, fig.width=8, fig.height=6, fig.cap="Distribución de Esperanza de Vida"}
+ggplot(gapminder, aes(x = lifeExp)) +
+  geom_histogram(fill = "steelblue", alpha = 0.7) +
+  theme_minimal() +
+  labs(title = "Distribución de la Esperanza de Vida Global",
+       x = "Esperanza de Vida",
+       y = "Frecuencia")
+```
+
+# PARTE IV: ELEMENTOS AVANZADOS
+
+## Tablas Avanzadas
+
+### Tablas con kable
+```{r tabla-kable}
+gapminder %>%
+  group_by(continent) %>%
+  summarise(
+    n = n(),
+    mean_life = mean(lifeExp),
+    mean_gdp = mean(gdpPercap)
+  ) %>%
+  kable(digits = 2) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+### Tablas Interactivas con DT
+```{r tabla-dt}
+datatable(
+  gapminder,
+  options = list(
+    pageLength = 5,
+    scrollX = TRUE,
+    dom = 'Bfrtip',
+    buttons = c('copy', 'csv', 'excel', 'pdf', 'print')
+  ),
+  extensions = 'Buttons',
+  filter = 'top'
+)
+```
+
+## Gráficos Avanzados
+
+### Gráficos Interactivos con plotly
+```{r plotly-ejemplo}
+p <- ggplot(gapminder, 
+            aes(x = gdpPercap, 
+                y = lifeExp, 
+                color = continent,
+                text = paste("País:", country,
+                           "<br>PIB:", scales::dollar(gdpPercap),
+                           "<br>Esperanza de vida:", round(lifeExp, 1)))) +
+  geom_point(alpha = 0.6) +
+  scale_x_log10(labels = scales::dollar_format()) +
+  theme_minimal() +
+  labs(title = "PIB per cápita vs Esperanza de Vida",
+       x = "PIB per cápita (escala log)",
+       y = "Esperanza de Vida")
+
+ggplotly(p, tooltip = "text")
+```
+
+## Elementos Matemáticos
+
+### Ecuaciones en Línea
+La fórmula para la media: $\bar{x} = \frac{1}{n}\sum_{i=1}^n x_i$
+
+### Ecuaciones en Bloque
+La fórmula para el estadístico t:
+$$
+t = \frac{\bar{x} - \mu_0}{s/\sqrt{n}}
+$$
+
+# PARTE V: PERSONALIZACIÓN AVANZADA
+
+## CSS Personalizado
+
+Crear archivo `styles.css`:
+```css
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+  border-bottom: 1px solid #eee;
+}
+
+.plot-container {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+```
+
+## Temas Predefinidos
+
+Opciones disponibles para `theme`:
+- default
+- cerulean
+- journal
+- flatly
+- darkly
+- readable
+- spacelab
+- united
+- cosmo
+- lumen
+- paper
+- sandstone
+- simplex
+- yeti
+
+# PARTE VI: ACTIVIDAD PRÁCTICA
+
+## Ejercicio: Traspaso informe Ciencias Sociales computacionales a formato RMarkdown
+
+### Objetivo
+Traspasar texto, incluyendo referencias a Rmarkdown y elaborar informe. 
+
+### Datos
+No se usan datos, sólo referencias. Eventualmente se pueden incluri links o imagenes. 
+
+### Tareas
+
+1. Configuración del Documento:
+   - YAML header personalizado
+   - Tabla de contenidos flotante
+   - Secciones numeradas
+   - Referencias
+
+2. Análisis Requerido:
+   - Sin análisis requerido 
+
+### Plantilla Base
+
+```yaml
+---
+title: "Análisis de Indicadores Sociales"
+author: "Tu Nombre"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: show
+---
+```
+
+```r
+# Código inicial
+library(tidyverse)
+library(gapminder)
+library(DT)
+library(plotly)
+```
+
+# RECURSOS ADICIONALES
+
+## Enlaces Útiles
+- [RMarkdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+- [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
+## Referencias Bibliográficas
+```markdown
+[referencias.bib]
+@book{xie2018r,
+  title={R markdown: The definitive guide},
+  author={Xie, Yihui and Allaire, Joseph J and Grolemund, Garrett},
+  year={2018},
+  publisher={Chapman and Hall/CRC}
+}
+```
+
+# Información de Sesión
+```{r}
+sessionInfo()
+```
+
+
+
+
